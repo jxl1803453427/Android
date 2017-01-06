@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:abc="http://schemas.android.com/apk/res-auto"
+    xmlns:bcd="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.sanxiang.project.customView.CustomActivity">
+
+    <com.sanxiang.project.customView.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/gray"/>
+    <com.sanxiang.project.customView.CustomView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        abc:titleText="154kdg7"
+        abc:titleTextColor="@color/red"
+        abc:titleTextSize="50sp"/>
+    <com.sanxiang.project.customView.CustomImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        abc:image="@mipmap/ic_launcher"
+        bcd:imageScaleType="fillXY"
+        bcd:titleText="你"
+        abc:titleTextSize="20sp"
+        abc:titleTextColor="@color/green"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"/>
+</LinearLayout>

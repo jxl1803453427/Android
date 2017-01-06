@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sanxiang.project.ScrollConflict.MyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<com.sanxiang.project.ScrollConflict.MyLinarLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sanxiang.project.ScrollConflict.ConflictActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/orange"/>
+    <com.sanxiang.project.ScrollConflict.MyTextView
+        android:id="@+id/con_text"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/green"/>
+    <com.sanxiang.project.ScrollConflict.MyListView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/con_list">
+
+    </com.sanxiang.project.ScrollConflict.MyListView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/blue"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/red"/>
+</com.sanxiang.project.ScrollConflict.MyLinarLayout>
+</com.sanxiang.project.ScrollConflict.MyScrollView>
