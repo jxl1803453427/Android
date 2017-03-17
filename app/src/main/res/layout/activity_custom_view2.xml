@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:abc="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.sanxiang.project.customView.CustomView2Activity">
+    <com.sanxiang.project.customView.MyViewGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gray">
+
+        <com.sanxiang.project.customView.TestView
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:text="测试标准"
+            android:background="@color/blue"
+            android:textSize="25sp"
+            android:layout_margin="20dp"
+            android:gravity="center"/>
+        <com.sanxiang.project.customView.TestView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="测试标准"
+            android:background="@color/orange"
+            android:textSize="25sp"
+            android:layout_margin="20dp"
+            android:gravity="center"/>
+        <com.sanxiang.project.customView.TestView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:text="测试标准"
+            android:background="@color/red"
+            android:textSize="25sp"
+            android:layout_margin="20dp"
+            android:gravity="center"/>
+        <com.sanxiang.project.customView.TestView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试标准"
+            android:background="@color/green"
+            android:textSize="25sp"
+            android:layout_margin="20dp"
+            android:gravity="center"/>
+    </com.sanxiang.project.customView.MyViewGroup>
+
+    <com.sanxiang.project.customView.PathView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/green"/>
+</LinearLayout>

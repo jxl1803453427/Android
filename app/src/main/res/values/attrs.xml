@@ -24,4 +24,17 @@
         <attr name="image"/>
         <attr name="imageScaleType"/>
     </declare-styleable>
+    
+    <declare-styleable name="custom_ring">
+        <attr name="firstColor" format="color"></attr>
+        <attr name="secondColor" format="color"/>
+        <attr name="circleWidth" format="dimension"/>
+        <attr name="speed" >
+            <enum name="fast" value="0"/>
+            <enum name="slowly" value="1"/>
+            <enum name="nomal" value="2"/>
+        </attr>
+
+    </declare-styleable>
+
 </resources>

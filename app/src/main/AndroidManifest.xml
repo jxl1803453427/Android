@@ -2,7 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sanxiang.project">
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_icon"
         android:label="@string/app_name"
@@ -16,7 +23,22 @@
             </intent-filter>
         </activity>
         <activity android:name=".ScrollConflict.ConflictActivity" />
-        <activity android:name=".customView.CustomActivity"></activity>
+        <activity android:name=".customView.CustomActivity" />
+        <activity android:name=".customView.CustomView2Activity" />
+        <activity android:name=".customView.ViewHelperActivity" />
+        <activity android:name=".handler.HandlerActivity" />
+        <activity android:name=".cache.CacheActivity" />
+        <activity
+            android:name=".TestActivity"
+            android:windowSoftInputMode="adjustPan|stateUnchanged" />
+        <activity android:name=".screen.ScreenActivity" />
+        <activity android:name=".blueTooth.BlueToothActivity" />
+        <activity android:name=".loopPager.PagerActivity" />
+        <activity android:name=".h5.H5Activity" />
+        <activity android:name=".jni.JniActivity" />
+        <activity android:name=".http.HttpActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".http.ListActivity"></activity>
     </application>
 
 </manifest>

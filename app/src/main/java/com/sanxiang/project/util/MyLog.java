@@ -11,6 +11,7 @@ public class MyLog {
     public static void log(String str){
         if(isDug){
             Log.e("TAG",str);
+
         }
     }
 }

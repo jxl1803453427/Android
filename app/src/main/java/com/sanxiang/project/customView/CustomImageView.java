@@ -40,8 +40,8 @@ public class CustomImageView extends View{
 
     public CustomImageView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        TypedArray array = context.getTheme().obtainStyledAttributes(attrs, R.styleable.CustomImageView,defStyleAttr,0);
-
+//        TypedArray array = context.getTheme().obtainStyledAttributes(attrs, R.styleable.CustomImageView,defStyleAttr,0);
+        TypedArray array = context.obtainStyledAttributes(attrs,R.styleable.CustomImageView);
         int count = array.getIndexCount();
         for (int i=0;i<count;i++){
             int attr = array.getIndex(i);
@@ -120,20 +120,23 @@ public class CustomImageView extends View{
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        mPaint.setStrokeWidth(20);
+        mPaint.setStrokeWidth(30);
         mPaint.setStyle(Paint.Style.STROKE);
+
         mPaint.setColor(getResources().getColor(R.color.gray));
         canvas.drawRect(0,0,mWidth,mHeight,mPaint);
 
         rect.left = getPaddingLeft();
-        rect.right = mWidth - getPaddingRight();
+        rect.right =mWidth - getPaddingRight();
         rect.top = getPaddingTop();
         rect.bottom = mHeight - getPaddingBottom();
         mPaint.setColor(mTitleTextColor);
         mPaint.setStyle(Paint.Style.FILL);
 
+
         if(mTextBound.width() >mWidth){
             TextPaint paint = new TextPaint(mPaint);
+            //多余的长度用...代替，第二个参数字符串最大的宽度
             String msg = TextUtils.ellipsize(mTitle,paint,mWidth-getPaddingLeft() - getPaddingRight(),
                     TextUtils.TruncateAt.END).toString();
             canvas.drawText(msg,getPaddingLeft(),mHeight - getPaddingBottom(),mPaint);
@@ -145,8 +148,10 @@ public class CustomImageView extends View{
         rect.bottom -= mTextBound.height();
 
         if (mImageScale == IMAGE_SCALE_FITXY)
+
         {
-            canvas.drawBitmap(mImage, null, rect, mPaint);
+//            rect.right /=2;
+            canvas.drawBitmap(mImage, null, rect, mPaint);//第二个参数为null不裁剪
         } else
         {
             //计算居中的矩形范围
@@ -158,5 +163,6 @@ public class CustomImageView extends View{
             canvas.drawBitmap(mImage, null, rect, mPaint);
 
         }
+
     }
 }

@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<LinearLayout
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.sanxiang.project.MainActivity">
+    tools:context="com.sanxiang.project.MainActivity"
+    >
+    <Button
+        android:background="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:onClick="test"
+        android:textAllCaps="false"/>
 
     <Button
         android:layout_width="match_parent"
@@ -18,4 +32,63 @@
         android:text="CustomView"
         android:onClick="CustomView"
         android:textAllCaps="false"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CustomView2"
+        android:onClick="CustomView2"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="viewHelper"
+        android:onClick="viewHelper"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="handler"
+        android:onClick="handler"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cache"
+        android:onClick="cache"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="screen"
+        android:onClick="screen"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="blueTooth"
+        android:onClick="blueTooth"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="h5"
+        android:onClick="h5"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="jni"
+        android:onClick="jni"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="http"
+        android:onClick="http"
+        android:textAllCaps="false"/>
+
 </LinearLayout>
+</ScrollView>

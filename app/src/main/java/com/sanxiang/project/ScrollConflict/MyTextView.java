@@ -33,5 +33,7 @@ public class MyTextView extends TextView{
     public boolean onTouchEvent(MotionEvent event) {
         MyLog.log("textview_______ontouch"+super.onTouchEvent(event));
         return super.onTouchEvent(event);
+
+
     }
 }
